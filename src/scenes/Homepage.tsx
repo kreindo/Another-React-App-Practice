@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from 'parts/Header.js';
+import Body from 'parts/Body';
 
 const Homepage = () => {
   return (
     <div>
-      <Header></Header>
+      <Body></Body>
     </div>
   );
 };

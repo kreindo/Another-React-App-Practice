@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from 'component/Card';
 
-const Header = () => {
+const Body = () => {
   return (
     <div>
       <header>
@@ -13,4 +13,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Body;

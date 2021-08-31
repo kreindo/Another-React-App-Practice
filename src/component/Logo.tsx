@@ -2,7 +2,7 @@ import Logo from 'assets/images/Logo.png';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-export default function CompanyLogo(settings) {
+export default function CompanyLogo(settings: any) {
   return (
     <div>
       <div>

@@ -78,11 +78,10 @@ const Form = () => {
           <input
             className="form-input"
             placeholder="Enter Password"
-            type="pass"
+            type="password"
           />
           <Btn className="Btn" value="Login"></Btn>
           {/* <input type="button" /> */}
-          
         </div>
       </div>
     </div>

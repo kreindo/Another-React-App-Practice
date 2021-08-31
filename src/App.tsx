@@ -1,5 +1,5 @@
 import './App.css';
-import Homepage from 'scenes/Homepage.js';
+import Homepage from 'scenes/Homepage';
 import Login from 'scenes/Login';
 
 function App() {
