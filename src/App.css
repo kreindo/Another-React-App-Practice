@@ -1,8 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: image();
+}
+
 header {
   display: flex;
 }
 
-.card-item{
+.card-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,4 +31,50 @@ header {
 .card-item:hover {
   box-shadow: 0px 2px 14px 0px rgb(0, 0, 0, 0.4);
   transform: translateY(20px);
+}
+
+.login-form .login-form-container {
+  position: relative;
+  width: 311px;
+  height: 220px;
+  padding: 68px 30px 0px;
+  display: flex;
+  flex-direction: column;
+  background: #3198ae;
+  border-style: none;
+  overflow: hidden;
+}
+.login-form .login-form-container svg {
+  position: absolute;
+  left: 48%;
+  top: 30%;
+  width: 198px;
+  height: 201px;
+  mix-blend-mode: overlay;
+  z-index: 1;
+}
+.login-form .login-form-container .form-input {
+  margin-top: 9px;
+  border-style: none;
+  z-index: 2;
+  height: 40px;
+  width: 266px;
+}
+.login-form .login-form-container .form-input:focus {
+  background-color: lightblue;
+  outline: none;
+}
+.login-form .login-form-container .form-input::placeholder {
+  color: #aaaa;
+  padding-left: 20px;
+}
+
+.Btn {
+  background: #98dc9f;
+  border: none;
+  color: white;
+  padding: 12px 75px;
+  font-weight: 800;
+  font-size: 14px;
+  margin-top: 14px;
 }
