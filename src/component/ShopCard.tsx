@@ -1,8 +1,5 @@
 import React from 'react';
-interface Props {
-  value?: string;
-}
-const ShopCard = (props: Props) => {
+const ShopCard = (props: any) => {
   return (
     <div>
       <div className="shopcard-container">

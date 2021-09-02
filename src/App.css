@@ -11,7 +11,8 @@
   align-items: center;
   margin-top: 170px;
   align-items: center;
-  white-space: nowrap;
+  white-space: normal;
+  text-align: center;
 }
 
 .center {
@@ -20,7 +21,9 @@
   justify-content: center;
   align-items: center;
 }
-
+pre {
+  white-space: normal;
+}
 header {
   display: flex;
 }
