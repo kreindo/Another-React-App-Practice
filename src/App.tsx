@@ -8,6 +8,7 @@ import './App.css';
 function App() {
   const [dat, setDat] = React.useState(true);
   const [post, setPosts] = React.useState();
+  const [post1, setPosts1] = React.useState();
   const [post2, setPosts2] = React.useState();
 
   React.useEffect(() => {
@@ -19,7 +20,7 @@ function App() {
     const _SECOND__URL = 'https://animechan.vercel.app/api/random';
     const _THIRD__URL = 'https://www.boredapi.com/api/activity';
     const _IMG__URL = 'https://api.imgur.com/3/gallery/search?q=cats';
-    fetch(_IMG__URL, {
+    fetch(_SECOND__URL, {
       method: 'GET',
       headers: new Headers({
         Authorization: 'Client-ID 971a7476ddb7eaf',
@@ -30,9 +31,11 @@ function App() {
       })
       .then((response: any) => {
         setDat(false);
-        console.log(response.data[0]);
-        if (response) {
-          setPosts(response);
+        console.log(response.quote);
+        if (response.quote) {
+          setPosts(response.anime);
+          setPosts1(response.character);
+          setPosts2(response.quote);
         } else {
           console.log('An error happened when fetching data');
         }
@@ -48,6 +51,8 @@ function App() {
   ) : (
     <div className="center">
       <pre>{JSON.stringify(post, null, 1)}</pre>
+      <br />
+      <pre>{JSON.stringify(post1, null, 1)}</pre>
       <br />
       <pre>{JSON.stringify(post2, null, 1)}</pre>
     </div>
