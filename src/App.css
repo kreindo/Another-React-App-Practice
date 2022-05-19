@@ -1,7 +1,16 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.background-content {
+  background-image: url(assets/images/asdf.png);
+  opacity: 0.7;
+}
+
+.loadingtext {
+  color: white;
 }
 
 .App {
@@ -16,6 +25,8 @@
 }
 
 .center {
+  color: white;
+  text-shadow: 2px 2px black;
   margin-top: 8px;
   display: flex;
   flex-direction: column;
@@ -84,6 +95,11 @@ header {
 }
 
 .shopcard-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -200px;
+  background-image: url(assets/images/asdf.png);
+  opacity: 0.7;
   border-radius: 10px;
   border: solid 1px rgb(0, 0, 0, 0.4);
   width: 400px;
