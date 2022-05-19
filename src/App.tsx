@@ -2,6 +2,7 @@ import CC from 'component/ShopCard';
 // import Login from 'scenes/Login';
 import React, { useState } from 'react';
 import './App.css';
+import asdf from "assets/images";
 // import Homepage from 'scenes/Homepage';
 // import Cart from 'scenes/Cart';
 
@@ -47,7 +48,10 @@ function App() {
   };
 
   const content = dat ? (
-    <div>Loading data...</div>
+    <div className="background-content">
+      <div>Loading data...</div>
+      
+    </div>
   ) : (
     <div className="center">
       <pre>{JSON.stringify(post, null, 1)}</pre>
